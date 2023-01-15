@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="existing_goals.css">
+    <title>Goals Page</title>
+</head>
+<body>
+    <div class = introduction>
+
+    <h1>Enter a goal, your goal should be of type SMART</h1>
+<ol><div class="intro_text">
+    S: Specific – target a specific area for improvement.<br>
+    M: Measurable – quantify or at least suggest an indicator of progress.<br>
+    A: Assignable – specify who will do it.<br>
+    R: Realistic – state what results can realistically be achieved, given available resources.<br>
+    T: Time-related – specify when the result(s) can be achieved.<br>
+   <p></p>
+ 
+   More info <a href="https://en.wikipedia.org/wiki/SMART_criteria">here</a><br>
+</div>
+</ol>
+</div>
+    
+
+<form class = main_form action="existing_goals_page.html">
+    <div class = main_form>
+
+    <div class = textfield>
+    <input class="goalname"type="text" placeholder="Goal Name">
+    <span></span>
+    <label class="label" for="goalname" id="goalNameLabel">Name</label>
+    </div>
+
+    <div class = textfield>
+        <input class="date"type="text" placeholder="Date">
+        <span></span>
+        <label class="label" for="date" id="dateLabel">Date</label>
+        </div>
+
+    <div class = textbox>
+        <input class="date"type="text" placeholder="Description">
+        <span></span>
+        <label class="label" for="date" id="dateLabel">Description</label>
+        </div>
+
+        <input type="submit" value="Enter goal">
+        <div class="signinpagelink"><a href="ruy_log_2.html">Return to login</a></div></div>
+
+
+  
+    <input name="Enter Goal" type="submit" id="button">
+    
+      
+</form>
+
+<p class="output" id="output"></p>
+
+<script>
+    var x = document.getElementById("nameinputed").innerHTML;
+    function display(){
+        document.getElementById("output").innerHTML = x;
+    }
+    document.getElementById('button').addEventListener('click', display);
+
+
+</script>
+
+
+</body>
+</html>
